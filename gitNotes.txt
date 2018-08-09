@@ -1,0 +1,30 @@
+workspace(local folder)       staging area(index)         history(commits)
+
+git diff
+    difference of workspace file with respect to stagin area
+
+git diff --staged
+    difference of staged file with respect to commited history
+
+git log
+    show all commits
+
+git checkout -- filename
+    reset the local file to same as staging area
+
+git reset HEAD filename
+    reset file in staging area to same as lastest commit version of that file
+    we can use "git checkout filename" to reset the working file version as well
+
+    git rest commitID -- filename
+
+ 
+
+git reset filename
+    reset the local filename to staging area version
+
+git reset head filename
+    reset file with commit pointing by head
+
+
+
