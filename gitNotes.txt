@@ -1,30 +1,39 @@
 workspace(local folder)       staging area(index)         history(commits)
 
-git diff
-    difference of workspace file with respect to stagin area
+git config --list
 
-git diff --staged
-    difference of staged file with respect to commited history
+git rm filename
+    delete file and stage it too
 
-git log
-    show all commits
+//difference of workspace and staging area
+    git diff
+    
+//difference of staging area and working history
+    git diff --staged
 
-git checkout -- filename
-    reset the local file to same as staging area
+//show all commits
+    git log
+    
+//show all logs for a specific file
+    git log -- filename
+    
+//stage a file
+    git add filename
+    
+//unstage a file
+    git reset HEAD -- filename
+    
+//reset the local file to same as staging area
+    git checkout -- filename
+    
 
-git reset HEAD filename
+    
+
+//restore file from a earlier commit
+git reset HEAD -- filename
     reset file in staging area to same as lastest commit version of that file
     we can use "git checkout filename" to reset the working file version as well
 
-    git rest commitID -- filename
-
- 
-
-git reset filename
-    reset the local filename to staging area version
-
-git reset head filename
-    reset file with commit pointing by head
-
-
-
+    OR.....
+    git reset commitID -- filename
+    reset file in staging area to same as given commit id version
