@@ -1,0 +1,11 @@
+workspace(local folder)       staging area(index)         history(commits)
+
+
+git reset filename
+    reset the local filename to staging area version
+
+git reset head filename
+    reset file with commit pointing by head
+
+
+
